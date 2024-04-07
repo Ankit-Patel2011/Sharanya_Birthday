@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wishing You</title>
+<style>
+  /* Header */
+  header {
+    background-color: #ff80ab; /* Pink color for header */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Ensure header is above other elements */
+    transition: background-color 0.3s ease;
+    animation: header-slide 0.5s ease-in-out;
+  }
+
+  header:hover {
+    background-color: #ff4081; /* Darken color on hover */
+  }
+
+  header h1 {
+    color: #fff; /* White text color */
+    margin: 0;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    animation: text-pop-up 0.5s ease-in-out;
+  }
+
+  header nav {
+    margin-top: 20px;
+  }
+
+  header nav a {
+    color: #fff; /* White text color for links */
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+  }
+
+  /* Footer */
+  footer {
+    background-color: #ff80ab; /* Pink color for footer */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Ensure footer is above other elements */
+    transition: background-color 0.3s ease;
+    animation: footer-slide 0.5s ease-in-out;
+  }
+
+  footer:hover {
+    background-color: #ff4081; /* Darken color on hover */
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-content p {
+    margin: 0 10px;
+  }
+
+  /* Body */
+  body {
+    background-color: #fce4ec; /* Light pink background color */
+    color: #333; /* Dark text color */
+    padding-top: 100px; /* Adjust for header height */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /* Wishing Box */
+  .wishing-box {
+    background-color: #fff; /* White background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    animation: box-fade-in 0.5s ease-in-out 0.5s forwards;
+  }
+
+  .wishing-box p {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+
+  .navigation-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navigation-buttons a {
+    background-color: #ff80ab;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+  }
+
+  .navigation-buttons a:hover {
+    background-color: #ff4081;
+  }
+
+  /* Animations */
+  @keyframes header-slide {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes footer-slide {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes text-pop-up {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes box-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Wishing You</h1>
+    <nav>
+      <a href="https://ankit-patel2011.github.io/Sharanya_Birthday/index.html">Home</a>
+      <a href="https://ankit-patel2011.github.io/Sharanya_Birthday/wishing.html">Wishing You</a>
+      <a href="https://ankit-patel2011.github.io/Sharanya_Birthday/massageForYou.html">A Message for You</a>
+    </nav>
+  </header>
+  
+  <div class="wishing-box">
+    
+    <p>Wishing you a very happy birthday! May your special day be filled with joy, laughter, and all the wonderful things you deserve.  may this birthday go amazing joyfull along with this new year of your life. keep smiling and keep achiving your goals may this time your all the wishes gets fullfilled.  have a good day keep enjoying..... </p>
+    <p>Best wishes,</p>
+    
+    <div class="navigation-buttons">
+     
+      <a href="https://ankit-patel2011.github.io/Sharanya_Birthday/massageForYou.html">Massage For You</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Ankit Patel. All rights reserved.</p>
+      <p><a href="#review">Review</a> | <a href="#contact">Contact Me</a></p>
+    </div>
+  </footer>
+</body>
+</html>

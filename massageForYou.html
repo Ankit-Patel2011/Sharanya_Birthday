@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Massage For You</title>
+<style>
+  /* Header */
+  header {
+    background-color: #ff80ab; /* Pink color for header */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Ensure header is above other elements */
+    transition: background-color 0.3s ease;
+    animation: header-slide 0.5s ease-in-out;
+  }
+
+  header:hover {
+    background-color: #ff4081; /* Darken color on hover */
+  }
+
+  header h1 {
+    color: #fff; /* White text color */
+    margin: 0;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    animation: text-pop-up 0.5s ease-in-out;
+  }
+
+  header nav {
+    margin-top: 20px;
+  }
+
+  header nav a {
+    color: #fff; /* White text color for links */
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+  }
+
+  /* Footer */
+  footer {
+    background-color: #ff80ab; /* Pink color for footer */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Ensure footer is above other elements */
+    transition: background-color 0.3s ease;
+    animation: footer-slide 0.5s ease-in-out;
+  }
+
+  footer:hover {
+    background-color: #ff4081; /* Darken color on hover */
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; /* Increased font size for the footer content */
+  }
+
+  .footer-content p {
+    margin: 0 10px;
+  }
+
+  /* Body */
+  body {
+ /* Unique background image */
+ background-color: #fce4ec; 
+    background-size: cover;
+    background-position: center;
+    color: #333; /* Dark text color */
+    padding-top: 100px; /* Adjust for header height */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+  }
+
+  /* Massage Box */
+  .massage-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    animation: box-fade-in 0.5s ease-in-out 0.5s forwards;
+    font-size: 20px; /* Increased font size for the massage box */
+    position: relative;
+    z-index: 9998; /* Ensure massage box is above other elements */
+  }
+
+  .massage-box p {
+    margin: 10px 0;
+  }
+
+  /* Animations */
+  @keyframes header-slide {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes footer-slide {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes text-pop-up {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes box-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Massage For You</h1>
+    <nav>
+      <a href="https://ankit-patel2011.github.io/Sharanya_Birthday/index.html">Home</a>
+      <a href="https://ankit-patel2011.github.io/Sharanya_Birthday/wishing.html">Wishing You</a>
+      <a href="https://ankit-patel2011.github.io/Sharanya_Birthday/massageForYou.html">A Message for You</a>
+    </nav>
+  </header>
+
+  <div id="massage-box" class="massage-box">
+    
+
+ <p>Dear Sharanya,</p>
+ <p>I want to tell a lot of things actually but hard to find opportunity or sometimes its like i cant able to . i know nowdays our friendship is getting different. 
+     may feel like its getting worst but lets not say that instead lets say it unique. 
+     trust me You are still truly special to me, and for me i ensure you are still equally important as you were in 6th. so please dont feel like our friendship is dying. unfortunately i felt this in between Sorry for that. But you still understands.. thats why you are always amazing. never seen someOne like you or sometimes its even for me it became hard to understant you </p>
+ <p>, I just want you to know that you mean the a lot to me. let this time try to push away our shyness and enjoy the life according to ourself (what i want but mostly it never heppens), and I am grateful to have you as a friend who still consider me as a friend.</p>
+ <p>Wishing you all the love, success, and happiness on your special day and always.</p>
+ <p>(written almost every thought regardless of any grammer or alignment soo.. please handle these messed up thouhts ),</p>
+ <p>Your Name</p>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Your Name. All rights reserved.</p>
+      <p><a href="#review">Review</a> | <a href="#contact">Contact Me</a></p>
+    </div>
+  </footer>
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("massage-box").style.transform = "translateY(0)";
+        document.getElementById("massage-box").style.opacity = "1";
+      } else {
+        document.getElementById("massage-box").style.transform = "translateY(-50%)";
+        document.getElementById("massage-box").style.opacity = "0";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+</body>
+</html>
